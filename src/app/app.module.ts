@@ -19,15 +19,14 @@ import { CommonModule } from '@angular/common';
     DashboardComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent,
-    HttpClientModule
+    MessagesComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
