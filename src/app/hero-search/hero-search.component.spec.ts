@@ -26,4 +26,12 @@ describe('HeroSearchComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should search',() =>{
+    component.search('');
+    expect(component).toBeTruthy();
+    
+  })
+  it('should add', ()=>{
+    expect(component.suma(1,2)).toEqual(3);
+  })
 });

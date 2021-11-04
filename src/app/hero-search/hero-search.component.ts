@@ -30,5 +30,9 @@ export class HeroSearchComponent implements OnInit {
     );
   }
 
+  suma(a:number, b:number): number{
 
+    return a+b;
+
+  } 
 }

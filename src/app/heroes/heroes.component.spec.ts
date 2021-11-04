@@ -1,4 +1,5 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { summaryFileName } from '@angular/compiler/src/aot/util';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeroesComponent } from './heroes.component';
@@ -24,4 +25,17 @@ describe('HeroesComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should add', () =>{
+    component.add('suma');
+    expect(component).toBeTruthy();
+  })
+  it('should add', () =>{
+    component.add('');
+    expect(component).toBeTruthy();
+    
+  })
+  it('should delete', ()=>{
+    component.delete({id: 1, name: ''});
+    expect(component).toBeTruthy(); 
+  })
 });
