@@ -27,4 +27,18 @@ describe('HeroDetailComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  //goBack COVERAGE
+  it('should go back',()=>{
+    component.goBack();
+    expect(component).toBeTruthy();
+  })
+
+  //save COVERAGE (brand)
+  it('should save', ()=>{
+    component.save();
+    expect(component).toBeTruthy();
+  })
+
+
 });

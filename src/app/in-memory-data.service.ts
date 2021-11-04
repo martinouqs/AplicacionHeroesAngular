@@ -8,8 +8,8 @@ import { Hero } from './hero';
 })
 export class InMemoryDataService implements InMemoryDbService {
 
-  createDb() {
-    const heroes = [
+  createDb(): { heroes: Hero[] } {
+    const heroes: Hero[] = [
       { id: 1, name: 'uno' },
       { id: 2, name: 'dos' },
       { id: 3, name: 'tres' },
@@ -17,12 +17,12 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 5, name: 'cinco' },
       { id: 5, name: 'seis' }
     ];
-    return {heroes};
+    return { heroes: heroes };
   }
 
-  genId(heroes: Hero[]):number{
+  genId(heroes: Hero[]): number {
 
-    return heroes.length > 0 ? Math.max(...heroes.map(hero => hero.id))+ 1 : 11; 
+    return heroes.length > 0 ? Math.max(...heroes.map(hero => hero.id)) + 1 : 11;
   }
 
   constructor() { }
